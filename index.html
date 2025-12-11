@@ -137,6 +137,60 @@
       font-weight: 600;
     }
 
+    /* زر مباشرة البلاغ */
+    .report-btn {
+      margin-top: 18px;
+      width: 100%;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #15803d, #16a34a);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 16px rgba(22, 163, 74, 0.35);
+    }
+
+    .report-btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 4px 10px rgba(22, 163, 74, 0.35);
+    }
+
+    /* قسم ID المنزل وآخر تحديث */
+    .meta {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid #f3f4f6;
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .home-id {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 4px;
+      color: #111827;
+      font-weight: 600;
+    }
+
+    .home-icon {
+      font-size: 18px;
+    }
+
+    .home-code {
+      letter-spacing: 0.08em;
+      direction: ltr;
+    }
+
+    .last-updated {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
     @media (max-width: 480px) {
       .card {
         padding: 20px 16px 22px;
@@ -153,6 +207,7 @@
 
     <div class="divider"></div>
 
+    <!-- حالة المنزل -->
     <div class="row">
       <div class="label-en">
         Home Status<br />
@@ -164,6 +219,7 @@
       </div>
     </div>
 
+    <!-- عدد الأفراد -->
     <div class="row">
       <div class="label-en">
         Residents<br />
@@ -175,6 +231,7 @@
       </div>
     </div>
 
+    <!-- الأطفال -->
     <div class="row">
       <div class="label-en">
         Children<br />
@@ -186,6 +243,7 @@
       </div>
     </div>
 
+    <!-- الحالة الصحية -->
     <div class="row">
       <div class="label-en">
         Health Condition<br />
@@ -197,6 +255,7 @@
       </div>
     </div>
 
+    <!-- المواد الخطرة -->
     <div class="row">
       <div class="label-en">
         Hazardous Materials<br />
@@ -208,6 +267,7 @@
       </div>
     </div>
 
+    <!-- رقم التواصل السريع -->
     <div class="footer">
       <span class="en">
         Emergency Contact:<br />
@@ -217,6 +277,22 @@
         رقم التواصل السريع<br />
         ٠٥x xxx xxxx
       </span>
+    </div>
+
+    <!-- زر مباشرة البلاغ -->
+    <button class="report-btn">
+      مباشرة البلاغ
+    </button>
+
+    <!-- ID المنزل وتاريخ آخر تحديث -->
+    <div class="meta">
+      <div class="home-id">
+        <span class="home-icon">🏠</span>
+        <span class="home-code">NB-0001</span>
+      </div>
+      <div class="last-updated">
+        آخر تحديث للبيانات: 9/12/2025
+      </div>
     </div>
   </div>
 </body>
