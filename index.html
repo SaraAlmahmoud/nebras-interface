@@ -298,11 +298,9 @@
       </span>
     </div>
 
-    <!-- زر مباشرة البلاغ -->
-    <button class="report-btn">
-      مباشرة البلاغ
-    </button>
-
+<button class="report-btn" id="reportButton" onclick="handleReport()">
+  مباشرة البلاغ
+</button>
     <!-- ID المنزل وتاريخ آخر تحديث -->
     <div class="meta">
       <div class="home-id">
@@ -314,5 +312,13 @@
       </div>
     </div>
   </div>
+  <script>
+  function handleReport() {
+    const btn = document.getElementById("reportButton");
+    btn.innerText = "✓ تم مباشرة البلاغ";
+    btn.style.background = "#0f5132";
+    btn.style.boxShadow = "none";
+  }
+</script>
 </body>
 </html>
