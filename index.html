@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEBRAS – لوحة معلومات المنزل</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
+
+    body {
+      background: #f2f4f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      max-width: 450px;
+      width: 100%;
+      padding: 24px 20px 28px;
+    }
+
+    .title-en {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #146c43;
+    }
+
+    .title-ar {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 4px;
+      color: #111827;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #4b5563;
+      margin-top: 4px;
+      margin-bottom: 18px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #e5e7eb;
+      margin: 8px 0 16px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #f3f4f6;
+      gap: 16px;
+      font-size: 15px;
+    }
+
+    .row:last-of-type {
+      border-bottom: none;
+    }
+
+    .label-en {
+      font-size: 13px;
+      color: #4b5563;
+      text-align: left;
+      direction: ltr;
+      flex: 1.1;
+    }
+
+    .label-ar {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111827;
+      text-align: right;
+      flex: 1;
+    }
+
+    .value-ar {
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .value-ar.ok {
+      color: #15803d;
+      font-weight: 600;
+    }
+
+    .value-ar.bad {
+      color: #b91c1c;
+      font-weight: 600;
+    }
+
+    .value-en {
+      font-size: 13px;
+      color: #111827;
+      direction: ltr;
+      text-align: left;
+    }
+
+    .footer {
+      margin-top: 16px;
+      padding-top: 10px;
+      border-top: 1px dashed #e5e7eb;
+      font-size: 13px;
+      color: #374151;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .footer span.en {
+      direction: ltr;
+      text-align: left;
+      flex: 1.1;
+    }
+
+    .footer span.ar {
+      text-align: right;
+      flex: 1;
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 16px 22px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title-en">NEBRAS</div>
+    <div class="title-ar">لوحة معلومات المنزل</div>
+    <div class="subtitle">Home Safety Information</div>
+
+    <div class="divider"></div>
+
+    <div class="row">
+      <div class="label-en">
+        Home Status<br />
+        <span class="value-en">Occupied</span>
+      </div>
+      <div class="label-ar">
+        حالة المنزل<br />
+        <span class="value-ar ok">مأهول</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label-en">
+        Residents<br />
+        <span class="value-en">4</span>
+      </div>
+      <div class="label-ar">
+        عدد الأفراد<br />
+        <span class="value-ar">٤</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label-en">
+        Children<br />
+        <span class="value-en">None</span>
+      </div>
+      <div class="label-ar">
+        الأطفال<br />
+        <span class="value-ar bad">لا يوجد</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label-en">
+        Health Condition<br />
+        <span class="value-en">Diabetes</span>
+      </div>
+      <div class="label-ar">
+        الحالة الصحية<br />
+        <span class="value-ar ok">مريض سكري</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label-en">
+        Hazardous Materials<br />
+        <span class="value-en">Gas Cylinder</span>
+      </div>
+      <div class="label-ar">
+        المواد الخطرة<br />
+        <span class="value-ar ok">أسطوانة غاز</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="en">
+        Emergency Contact:<br />
+        05x xxx xxxx
+      </span>
+      <span class="ar">
+        رقم التواصل السريع<br />
+        ٠٥x xxx xxxx
+      </span>
+    </div>
+  </div>
+</body>
+</html>
